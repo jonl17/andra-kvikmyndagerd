@@ -18,7 +18,8 @@
       "fieldset": "Slice zone",
       "config": {
         "labels": {
-          "video": []
+          "video": [],
+          "images": []
         },
         "choices": {
           "rich_text": {
@@ -28,14 +29,6 @@
             "icon": "format_textdirection_l_to_r",
             "display": "list",
             "non-repeat": {
-              "font_size": {
-                "type": "Select",
-                "config": {
-                  "options": ["normal", "small", "large"],
-                  "default_value": "normal",
-                  "label": "Font size"
-                }
-              },
               "text": {
                 "type": "StructuredText",
                 "config": {
@@ -53,8 +46,37 @@
             "description": "Add a video from youtube or vimeo",
             "icon": "video_call",
             "display": "list",
-            "non-repeat": {},
+            "non-repeat": {
+              "video_link": {
+                "type": "Link",
+                "config": {
+                  "allowTargetBlank": true,
+                  "label": "Video link",
+                  "placeholder": "Has to be a Youtube or Vimeo link"
+                }
+              }
+            },
             "repeat": {}
+          },
+          "images": {
+            "type": "Slice",
+            "fieldset": "Images",
+            "description": "Add an image or an array of images.",
+            "icon": "image",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": null
+                  },
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              }
+            }
           }
         }
       }

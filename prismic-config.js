@@ -2,6 +2,7 @@ const { PRISMIC_REPOSITORY_NAME, PRISMIC_ACCESS_TOKEN } = process.env
 
 const schemas = {
   page: require('./src/data/schemas/page.json'),
+  seo: require('./src/data/schemas/seo.json'),
 }
 
 module.exports = {

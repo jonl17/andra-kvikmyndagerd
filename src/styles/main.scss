@@ -1,13 +1,21 @@
+@import './config/typography.scss';
 @import './config/base.scss';
 @import './config/utils.scss';
 
 @import './components/page';
+@import './components/menu';
+@import './components/video';
+@import './components/aspect-ratio-box';
+@import './components/rich-text';
+@import './components/images';
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Neausa;
+  font-weight: 300;
 
   main {
     min-height: 100vh;
-    background-color: white;
+    background-color: black;
+    color: white;
   }
 }

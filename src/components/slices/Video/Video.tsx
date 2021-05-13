@@ -10,7 +10,7 @@ const Video: React.FC<{
 }> = ({ videoUrl, autoplay = true, containerClass }) => {
   const generateUrlFromService = (service: string, id: string) => {
     if (service === 'youtube') {
-      return `https://www.youtube.com/embed/${id}`
+      return `https://www.youtube.com/embed/${id}?rel=0;&modestbranding=1;&controls=0`
     } else if (service === 'vimeo') {
       return `https://player.vimeo.com/video/${id}`
     } else return ''

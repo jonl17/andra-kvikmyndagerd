@@ -16,7 +16,7 @@ const Footer = () => {
       <p>{`© ${meta.title} ${new Date().getFullYear()}`}</p>
       <div className='d-flex align-items-center'>
         {contact.map(item => (
-          <a key={item.url} className='pl-3' href={item.url} target='_blank'>
+          <a key={item.url} className='ps-3' href={item.url} target='_blank'>
             {iconTypes[item.type]}
           </a>
         ))}

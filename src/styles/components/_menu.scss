@@ -1,10 +1,13 @@
 .menu {
-  height: 250px;
+  height: 100px;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
 
   img {
     height: 100%;
-    border-radius: 50%;
   }
 }

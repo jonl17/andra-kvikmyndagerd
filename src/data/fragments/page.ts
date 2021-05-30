@@ -4,20 +4,20 @@ export const fragment = graphql`
   fragment pageFragmentFull on PrismicPage {
     data {
       body {
-        ... on PrismicPageBodyVideo {
+        ... on PrismicPageDataBodyVideo {
           ...videoSliceFragment
         }
-        ... on PrismicPageBodyRichText {
+        ... on PrismicPageDataBodyRichText {
           ...richTextSliceFragment
         }
-        ... on PrismicPageBodyImages {
+        ... on PrismicPageDataBodyImages {
           ...imagesSliceFragment
         }
       }
     }
   }
 
-  fragment imagesSliceFragment on PrismicPageBodyImages {
+  fragment imagesSliceFragment on PrismicPageDataBodyImages {
     slice_type
     items {
       image {
@@ -27,7 +27,7 @@ export const fragment = graphql`
     }
   }
 
-  fragment videoSliceFragment on PrismicPageBodyVideo {
+  fragment videoSliceFragment on PrismicPageDataBodyVideo {
     slice_type
     primary {
       video_link {
@@ -36,7 +36,7 @@ export const fragment = graphql`
     }
   }
 
-  fragment richTextSliceFragment on PrismicPageBodyRichText {
+  fragment richTextSliceFragment on PrismicPageDataBodyRichText {
     slice_type
     primary {
       text {

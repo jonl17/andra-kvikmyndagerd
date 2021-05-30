@@ -10,13 +10,20 @@
 @import './components/images';
 @import './components/footer';
 
+$bg: black;
+$color: white;
+
 body {
   font-family: Neausa;
   font-weight: 300;
 
   main {
     min-height: 100vh;
-    background-color: black;
-    color: white;
+    background-color: $bg;
+    color: $color;
+
+    * {
+      fill: $color;
+    }
   }
 }

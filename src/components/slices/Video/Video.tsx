@@ -27,7 +27,6 @@ const Video: React.FC<{
           src={generateUrlFromService(service, id).concat(
             `${autoplay ? `?autoplay=1` : ``}`
           )}
-          allow='autoplay;'
           allowFullScreen
           className='video__iframe'
         ></iframe>

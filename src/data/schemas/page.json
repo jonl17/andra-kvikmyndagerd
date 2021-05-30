@@ -19,7 +19,8 @@
       "config": {
         "labels": {
           "video": [],
-          "images": []
+          "images": [],
+          "banner": []
         },
         "choices": {
           "rich_text": {
@@ -77,6 +78,15 @@
                 }
               }
             }
+          },
+          "banner": {
+            "type": "Slice",
+            "fieldset": "Banner",
+            "description": "Large image banner.",
+            "icon": "bookmark",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {}
           }
         }
       }

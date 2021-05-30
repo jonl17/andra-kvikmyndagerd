@@ -12,8 +12,18 @@ const prismicPlugin = {
   options: {
     repositoryName,
     accessToken,
-    linkResolver: () => doc => linkResolver(doc),
+    linkResolver: doc => linkResolver(doc),
     schemas,
+    lang: '*',
+  },
+}
+
+const prismicPreviewPlugin = {
+  resolve: 'gatsby-plugin-prismic-previews',
+  options: {
+    repositoryName,
+    accessToken,
+    toolbar: 'new',
     lang: '*',
   },
 }
@@ -46,5 +56,7 @@ module.exports = {
       },
     },
     prismicPlugin,
+    prismicPreviewPlugin,
+    'gatsby-plugin-image',
   ],
 }

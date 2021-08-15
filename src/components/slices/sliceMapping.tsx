@@ -3,6 +3,7 @@ import { Fade } from 'react-reveal'
 import Video from '@cmp/slices/Video'
 import RichText from '@cmp/slices/RichText'
 import Images from '@cmp/slices/Images'
+import Banner from '@cmp/slices/Banner'
 
 type SliceProps = {
   slice_type: string
@@ -27,6 +28,10 @@ const findProps = (slice: any) => {
           alt: item.image.alt,
         })),
       }
+    case 'banner':
+      return {
+        image: slice.primary.image,
+      }
     default:
       return slice
   }
@@ -37,6 +42,7 @@ const SliceMapping = ({ slice }: { slice: SliceProps }) => {
     video: Video,
     rich_text: RichText,
     images: Images,
+    banner: Banner,
   }
 
   const Cmp = sliceTypes[slice.slice_type]

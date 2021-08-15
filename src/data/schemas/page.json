@@ -85,7 +85,18 @@
             "description": "Large image banner.",
             "icon": "bookmark",
             "display": "list",
-            "non-repeat": {},
+            "non-repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "height": 750
+                  },
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              }
+            },
             "repeat": {}
           }
         }

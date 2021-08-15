@@ -1,0 +1,31 @@
+{
+  "Main": {
+    "heiti": {
+      "type": "Text",
+      "config": {
+        "label": "Heiti"
+      }
+    },
+    "links": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "link": {
+            "type": "Link",
+            "config": {
+              "allowTargetBlank": true,
+              "label": "Link"
+            }
+          },
+          "label": {
+            "type": "Text",
+            "config": {
+              "label": "Label"
+            }
+          }
+        },
+        "label": "Links"
+      }
+    }
+  }
+}

@@ -11,7 +11,7 @@ type Props = {
 
 const Page = ({ data }: Props) => {
   return (
-    <div className='page container py-4'>
+    <div className='page container'>
       {data.prismicPage.data.body.map((slice: any, i: number) => (
         <SliceMapping key={i} slice={slice} />
       ))}

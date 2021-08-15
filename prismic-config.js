@@ -4,6 +4,7 @@ const { GATSBY_PRISMIC_REPOSITORY_NAME, GATSBY_PRISMIC_ACCESS_TOKEN } =
 const schemas = {
   page: require('./src/data/schemas/page.json'),
   seo: require('./src/data/schemas/seo.json'),
+  menu: require('./src/data/schemas/menu.json'),
 }
 
 module.exports = {

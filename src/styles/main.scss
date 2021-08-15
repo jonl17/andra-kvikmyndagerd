@@ -9,12 +9,13 @@
 @import './components/rich-text';
 @import './components/images';
 @import './components/footer';
+@import './components/banner';
 
 $bg: black;
 $color: white;
 
 body {
-  font-family: Neausa;
+  font-family: Founders;
   font-weight: 300;
 
   main {

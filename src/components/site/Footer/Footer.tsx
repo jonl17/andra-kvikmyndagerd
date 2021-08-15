@@ -12,7 +12,7 @@ const Footer = () => {
   const meta = useGetSeo()
   const contact = useGetContact()
   return (
-    <div className='footer container d-flex flex-column justify-content-center align-items-end'>
+    <div className='footer container d-flex flex-column justify-content-center align-items-end px-3'>
       <p>{`© ${meta.title} ${new Date().getFullYear()}`}</p>
       <div className='d-flex align-items-center'>
         {contact.map(item => (

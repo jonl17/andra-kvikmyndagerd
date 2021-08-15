@@ -2,7 +2,6 @@ import React from 'react'
 import SliceMapping from '@cmp/slices/sliceMapping'
 import { graphql } from 'gatsby'
 import '@src/data/fragments/page'
-import { withPrismicPreview } from 'gatsby-plugin-prismic-previews'
 import linkResolver from '@src/data/resolvers/link'
 
 type Props = {
@@ -19,12 +18,7 @@ const Page = ({ data }: Props) => {
   )
 }
 
-export default withPrismicPreview(Page, [
-  {
-    repositoryName: 'kristin-andrea',
-    linkResolver,
-  },
-])
+export default Page
 
 export const query = graphql`
   query ($id: String) {

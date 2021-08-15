@@ -18,16 +18,6 @@ const prismicPlugin = {
   },
 }
 
-const prismicPreviewPlugin = {
-  resolve: 'gatsby-plugin-prismic-previews',
-  options: {
-    repositoryName,
-    accessToken,
-    toolbar: 'new',
-    lang: '*',
-  },
-}
-
 module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
@@ -53,7 +43,6 @@ module.exports = {
       },
     },
     prismicPlugin,
-    prismicPreviewPlugin,
     'gatsby-plugin-image',
   ],
 }

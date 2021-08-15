@@ -31,7 +31,6 @@
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-image": "^1.6.0",
     "gatsby-plugin-layout": "^2.5.0",
-    "gatsby-plugin-prismic-previews": "^4.0.0-beta.9",
     "gatsby-plugin-react-helmet": "^4.5.0",
     "gatsby-plugin-sass": "^4.5.0",
     "gatsby-plugin-typescript": "^3.5.0",

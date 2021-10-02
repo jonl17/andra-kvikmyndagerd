@@ -16,6 +16,24 @@ export const fragment = graphql`
         ... on PrismicPageDataBodyBanner {
           ...bannerSliceFragment
         }
+        ... on PrismicPageDataBodyImageAndText {
+          ...imageAndText
+        }
+      }
+    }
+  }
+
+  fragment imageAndText on PrismicPageDataBodyImageAndText {
+    slice_type
+    id
+    primary {
+      text {
+        html
+      }
+      image {
+        url
+        alt
+        gatsbyImageData
       }
     }
   }

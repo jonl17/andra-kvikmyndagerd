@@ -24,9 +24,7 @@ const Video: React.FC<{
     <div className={cn('container pt-2', containerClass)}>
       <AspectRatioBox ratio='widescreen'>
         <iframe
-          src={generateUrlFromService(service, id).concat(
-            `${autoplay ? `?autoplay=1` : ``}`
-          )}
+          src={generateUrlFromService(service, id)}
           allowFullScreen
           className='video__iframe'
         ></iframe>

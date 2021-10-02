@@ -7,6 +7,7 @@ export const fragment = graphql`
     data {
       links {
         link {
+          type
           url
         }
         label

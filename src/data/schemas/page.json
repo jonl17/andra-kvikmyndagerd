@@ -20,7 +20,8 @@
         "labels": {
           "video": [],
           "images": [],
-          "banner": []
+          "banner": [],
+          "image_and_text": []
         },
         "choices": {
           "rich_text": {
@@ -92,6 +93,32 @@
                   "constraint": {
                     "height": 750
                   },
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "image_and_text": {
+            "type": "Slice",
+            "fieldset": "Image and text",
+            "description": "Image and text side by side.",
+            "icon": "accessibility",
+            "display": "list",
+            "non-repeat": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, list-item, o-list-item",
+                  "allowTargetBlank": true,
+                  "label": "Text"
+                }
+              },
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
                   "thumbnails": [],
                   "label": "Image"
                 }

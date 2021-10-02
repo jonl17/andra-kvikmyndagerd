@@ -2,6 +2,10 @@
 @import './config/base.scss';
 @import './config/utils.scss';
 
+$bg: black;
+$color: white;
+$menu-height: 110px;
+
 @import './components/page';
 @import './components/menu';
 @import './components/video';
@@ -10,9 +14,6 @@
 @import './components/images';
 @import './components/footer';
 @import './components/banner';
-
-$bg: black;
-$color: white;
 
 body {
   font-family: Founders;

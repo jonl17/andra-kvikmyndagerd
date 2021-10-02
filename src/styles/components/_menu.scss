@@ -1,5 +1,3 @@
-$menu-height: 100px;
-
 .menu {
   height: $menu-height;
   display: flex;
@@ -16,17 +14,23 @@ $menu-height: 100px;
 
   &__links {
     &__button {
-      background: $white;
-      border-radius: 5px;
+      &--active {
+        text-decoration: underline !important;
+      }
 
       &:hover {
         background-color: lightgray;
+        cursor: pointer;
+
+        a {
+          color: $black;
+        }
       }
 
       a {
         font-size: 18px;
         font-weight: 600;
-        color: $black;
+        color: $white;
         text-decoration: none;
         text-transform: uppercase;
 

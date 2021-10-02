@@ -4,6 +4,7 @@ import Video from '@cmp/slices/Video'
 import RichText from '@cmp/slices/RichText'
 import Images from '@cmp/slices/Images'
 import Banner from '@cmp/slices/Banner'
+import ImageAndText from '@cmp/slices/ImageAndText'
 
 type SliceProps = {
   slice_type: string
@@ -32,6 +33,11 @@ const findProps = (slice: any) => {
       return {
         image: slice.primary.image,
       }
+    case 'image_and_text':
+      return {
+        image: slice.primary.image,
+        text: slice.primary.text,
+      }
     default:
       return slice
   }
@@ -43,6 +49,7 @@ const SliceMapping = ({ slice }: { slice: SliceProps }) => {
     rich_text: RichText,
     images: Images,
     banner: Banner,
+    image_and_text: ImageAndText,
   }
 
   const Cmp = sliceTypes[slice.slice_type]

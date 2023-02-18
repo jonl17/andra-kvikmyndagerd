@@ -1,5 +1,10 @@
 @font-face {
-  src: url('./fonts/founders/light.otf');
-  font-family: Founders;
+  src: url('./fonts/regular.woff') format('woff');
+  font-family: Sancini;
   font-weight: 300;
+}
+@font-face {
+  src: url('./fonts/bold.woff') format('woff');
+  font-family: Sancini;
+  font-weight: 600;
 }

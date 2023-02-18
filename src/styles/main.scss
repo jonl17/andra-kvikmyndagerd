@@ -14,9 +14,12 @@ $menu-height: 110px;
 @import './components/images';
 @import './components/footer';
 @import './components/banner';
+@import './components/movie-poster';
+@import './components/movie-synopsis';
+@import './components/credits';
 
 body {
-  font-family: Founders;
+  font-family: Sancini;
   font-weight: 300;
 
   main {
@@ -26,6 +29,10 @@ body {
 
     * {
       fill: $color;
+    }
+
+    .text-label {
+      font-weight: 600;
     }
   }
 }

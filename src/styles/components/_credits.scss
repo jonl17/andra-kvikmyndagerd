@@ -1,0 +1,16 @@
+.credits {
+  &__row {
+    display: grid;
+    grid-template-columns: 300px auto;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 800px) {
+    &__row {
+      grid-template-columns: 250px auto;
+    }
+  }
+}
